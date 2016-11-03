@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fastly Real-time Analytics" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+  <meta property="og:title" content="Fastly  Real-time Analytics" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="http://fastly.github.io/Soft-Landing/images/fastly_logo_120X120.png" />
+  <meta property="og:image:secure_url" content="https://www.fastly.com/a/images/fastly_logo_120X120.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="294" />
+  <meta property="og:image:height" content="71" />
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
+  <div>
+    <div>
+      {{ content }}
+    </div>
+  </div>
+
+</body>
+</html>

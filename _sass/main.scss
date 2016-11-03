@@ -1,0 +1,53 @@
+.fastly-logo {
+  width: 140px;
+}
+.header {
+  background: -webkit-linear-gradient(240deg, #c1272d 50%, #ed1c24 75%, #f15a24 95%);
+  background: linear-gradient(120deg, #c1272d 50%, #ed1c24 75%, #f15a24 95%)
+}
+.header-text {
+  @extend .color--white;
+  @extend .padding-bottom;
+  font-family: 'Raleway';
+  font-size: 30px;
+  line-height: 1.2em;
+  font-weight: 400;
+  h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 56px;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  min-height: 180px;
+  .unit:nth-of-type(2n+2) {
+    align-self: flex-end;
+  }
+  a {
+    @extend .color--grey-dark;
+    padding: 10px 0;
+    border: 1px solid grey;
+    text-align: center;
+  }
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .unit {
+    width: 50%;
+    border: 1px solid grey;
+    &:nth-of-type(2n+2) {
+      align-self: flex-end;
+    }
+  }
+  .endcap {
+    border: 1px solid grey;
+    align-self: center;
+  }
+}
+.hidden {
+  display: none;
+}
