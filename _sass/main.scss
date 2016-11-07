@@ -1,3 +1,9 @@
+.grid-col--1 {
+  flex: 1 1 0 !important;
+}
+.main-header.fixed, footer {
+  display: none;
+}
 .fastly-logo {
   width: 140px;
 }
@@ -9,8 +15,8 @@
   @extend .color--white;
   @extend .padding-bottom;
   font-family: 'Raleway';
-  font-size: 30px;
-  line-height: 1.2em;
+  font-size: 20px;
+  line-height: 1.4em;
   font-weight: 400;
   h1 {
     text-transform: uppercase;
@@ -18,40 +24,252 @@
     font-size: 56px;
   }
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   min-height: 180px;
+  @extend .padding-vertical;
+  background: linear-gradient(to bottom, #0071bc 2px, white 2px);
+  background-size: 10%;
+  background-repeat: repeat-x;
+  background-position: 0 90px;
+  .unit {
+    position: relative;
+    @media only screen and (max-width : 990px){
+      width: 50%;
+      text-align: right;
+      padding-right: 30px;
+    }
+  }
   .unit:nth-of-type(2n+2) {
     align-self: flex-end;
+    @media only screen and (max-width : 990px){
+      text-align: left;
+      padding-left: 30px;
+    }
+    a::after {
+      top: auto;
+      bottom: 44px;
+      @media only screen and (max-width : 990px){
+        top: 10px;
+        bottom: auto;
+        right: auto;
+        left: -37px;
+      }
+    }
   }
   a {
-    @extend .color--grey-dark;
+    position: relative;
+    color: #7C7C7C;
     padding: 10px 0;
-    border: 1px solid grey;
     text-align: center;
+    border: 2px solid #0071bc;
+    border-radius: 4px;
+    padding: 3px 5px;
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+      color: red;
+      border-color: red;
+      &::after {
+        border-color: red;
+      }
+    }
+    &::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border: 2px solid #0071bc;
+      border-radius: 10px;
+      background: white;
+      display: flex;
+      position: absolute;
+      top: 46px;
+      left: 45%;
+      @media only screen and (max-width : 990px){
+        top: 10px;
+        left: auto;
+        right: -37px;
+      }
+    }
   }
+  &::before {
+    content: "";
+    border-left: 2px solid #0071bc;
+    top: 1px;
+    left: 0;
+    position: relative;
+    height: 10px;
+    margin: auto 0;
+  }
+  &::after {
+    content: "";
+    border-right: 2px solid #0071bc;
+    top: 1px;
+    right: 0;
+    position: relative;
+    height: 10px;
+    margin: auto 0;
+  }
+  @media only screen and (max-width : 990px){
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 10px 0;
+    background: linear-gradient(to right, #0071bc 2px, white 2px);
+    background-size: 10%;
+    background-repeat: repeat-y;
+    background-position: 55.4% 0;
+    &::before {
+      content: "";
+      border-top: 2px solid #0071bc;
+      border-left: none;
+      top: -10px;
+      position: relative;
+      width: 10px;
+      margin: 0 auto;
+    }
+    &::after {
+      content: "";
+      border-bottom: 2px solid #0071bc;
+      border-right: none;
+      top: auto;
+      bottom: -10px;
+      position: relative;
+      width: 10px;
+      margin: 0 auto;
+    }
+  }
+}
+.event {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  height: auto;
+  transition: all 0.5s;
 }
 .timeline {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: linear-gradient(
+  to right,
+  transparent 0%,
+  transparent calc(50% - 0.81px),
+  #0071bc calc(50% - 0.8px),
+  #0071bc calc(50% + 0.8px),
+  transparent calc(50% + 0.81px),
+  transparent 100%
+  );
+  padding: 20px 0;
   .unit {
+    position: relative;
     width: 50%;
-    border: 1px solid grey;
-    &:nth-of-type(2n+2) {
+    padding: 20px;
+    right: 1px;
+    transition: all 0.5s;
+    &.active {
+      background: #e9f5fb;
+      &::after {
+        border-color: red;
+      }
+    }
+    &::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 2px solid #0071bc;
+      border-radius: 10px;
+      background: white;
+      display: flex;
+      position: absolute;
+      top: 40%;
+      right: -11px;
+      transition: all 0.5s;
+    }
+    &:nth-of-type(2n+2), &.right {
       align-self: flex-end;
+      left: 1px;
+      &::after {
+        right: auto;
+        left: -11px;
+      }
+    }
+    &.left {
+      align-self: flex-start;
+      padding: 20px 20px 20px 0;
     }
   }
-  .endcap {
-    border: 1px solid grey;
-    align-self: center;
+  &::before {
+    content: "";
+    border-bottom: 2px solid #0071bc;
+    top: -20px;
+    position: relative;
+    width: 40px;
+    margin: 0 auto;
+  }
+  &::after {
+    content: "";
+    border-bottom: 2px solid #0071bc;
+    bottom: -20px;
+    position: relative;
+    width: 40px;
+    margin: 0 auto;
+  }
+}
+.endcap {
+  align-self: center;
+  text-align: center;
+  a {
+    border: 2px solid #0071bc;
+    border-radius: 4px;
+    padding: 3px 5px;
+    text-decoration: none;
+    transition: all 0.5s;
   }
 }
 .hidden {
-  display: none;
+  transition: all 0.5s;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  top: -20px;
 }
 
 .main-content {
   min-height: 1000px;
 }
+
+.divider {
+  border-top: 1px solid grey;
+}
+
+.graph {
+  position:relative;
+}
+
+.data-point {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #0071bc;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.5s;
+  &.active {
+    border-color: red;
+  }
+}
+
+.point-fern-1 { top: 52%; left: 47%; }
+.point-debate1-1 { top: 8%; left: 30%; }
+.point-debate1-2 { top: 81%; left: 44% }
+.point-debate1-3 { top: 80%; left: 54% }
+.point-debate1-4 { top: 78%; left: 63.5% }
+.point-debate1-5 { top: 78%; left: 68% }
+.point-debate1-6 { top: 78%; left: 82.5% }
+.point-debate2-1 { top: 8%; left: 29.7%; }
+.point-debate2-2 { top: 64%; left: 53% }
+.point-debate2-3 { top: 78%; left: 62% }
+.point-debate3-1 { top: 27%; left: 56.5%; }
+.point-debate3-2 { top: 7%; left: 71% }
