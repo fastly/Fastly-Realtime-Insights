@@ -69,7 +69,7 @@
     padding: 3px 5px;
     text-decoration: none;
     transition: all 0.5s;
-    &:hover {
+    &:hover, &.active {
       color: red;
       border-color: red;
       &::after {
@@ -221,11 +221,25 @@
   align-self: center;
   text-align: center;
   a {
+    position: relative;
+    color: #7C7C7C;
+    text-align: center;
     border: 2px solid #0071bc;
     border-radius: 4px;
     padding: 3px 5px;
     text-decoration: none;
     transition: all 0.5s;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+    top: 2px;
+    &:hover, &.active {
+      color: red;
+      border-color: red;
+      &::after {
+        border-color: red;
+      }
+    }
   }
 }
 .hidden {
@@ -241,7 +255,9 @@
 }
 
 .divider {
-  border-top: 1px solid grey;
+  border: 1px solid grey;
+  border-width: 1px 0 0;
+  padding: 0;
 }
 
 .graph {
@@ -271,5 +287,5 @@
 .point-debate2-1 { top: 8%; left: 29.7%; }
 .point-debate2-2 { top: 64%; left: 53% }
 .point-debate2-3 { top: 78%; left: 62% }
-.point-debate3-1 { top: 27%; left: 56.5%; }
-.point-debate3-2 { top: 7%; left: 71% }
+.point-debate3-1 { top: 29%; left: 57%; }
+.point-debate3-2 { top: 6%; left: 71.5% }

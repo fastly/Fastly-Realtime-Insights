@@ -3,7 +3,7 @@ layout: 'page'
 ---
 <div class="header">
   <div class="container">
-    <div class="grid-row padding-vertical">
+    <div class="grid-row padding-top">
       <div class="grid-col--1">
         <img src="/assets/fastly_logo_white.svg" class="fastly-logo">
       </div>
@@ -13,7 +13,7 @@ layout: 'page'
     </div>
     <div class="grid-row">
       <div class="grid-col--1 header-text">
-        <h1>Fastly Real-time Insights</h1>
+        <h1>Real-time Insights</h1>
         <p>
           As a CDN, we’re in a unique position to view traffic patterns on
           the web. Fastly powers tens of thousands of websites, including
@@ -30,10 +30,10 @@ layout: 'page'
   <h2 class="text-xs-center margin-top">The 2016 Presidential Election</h2>
   <div class="grid-row">
     <div class="grid-col--1 navigation">
-      <div class="unit"><a href="#ferns" data-link="ferns">Between Two Ferns</a></div>
-      <div class="unit"><a href="#debate1" data-link="debate1">1st Debate</a></div>
-      <div class="unit"><a href="#debate2" data-link="debate2">2nd Debate</a></div>
-      <div class="unit"><a href="#debate3" data-link="debate3">3rd Debate</a></div>
+      <div class="unit"><a href="#ferns" data-link="ferns" class="active">Between Two Ferns</a></div>
+      <div class="unit"><a href="#debate1" data-link="debate1">The 1st Debate</a></div>
+      <div class="unit"><a href="#debate2" data-link="debate2">The 2nd Debate</a></div>
+      <div class="unit"><a href="#debate3" data-link="debate3">The 3rd Debate</a></div>
       <div class="unit"><a href="#election" data-link="election">Election Day</a></div>
     </div>
   </div>
@@ -64,7 +64,7 @@ layout: 'page'
           </div>
         </div>
         <div class="endcap">
-          <a href="#" data-link="debate1">1st Presidential Debate</a>
+          <a href="#" data-link="debate1">The 1st Debate</a>
         </div>
       </div>
       <div class="event hidden" data-content="debate1">
@@ -126,7 +126,7 @@ layout: 'page'
           </div>
         </div>
         <div class="endcap">
-          <a href="#" data-link="debate2">The Second Presidential Debate</a>
+          <a href="#" data-link="debate2">The 2nd Debate</a>
         </div>
       </div>
       <div class="event hidden" data-content="debate2">
@@ -155,7 +155,7 @@ layout: 'page'
           </div>
         </div>
         <div class="endcap">
-          <a data-link="debate3">The Final Presidential Debate</a>
+          <a href="#" data-link="debate3">The 3rd Debate</a>
         </div>
       </div>
       <div class="event hidden" data-content="debate3">
@@ -179,7 +179,15 @@ layout: 'page'
             10:35 PM EDT: a 67% increase as compared to normal as viewers checked out media sites post debate
           </div>
         </div>
-        <a data-link="election" class="endcap">Election Day : Coming soon</a>
+        <div class="endcap">
+          <a href="#" data-link="election">Election Day</a>
+        </div>
+      </div>
+      <div class="event hidden" data-content="election">
+        <h3>Election Day</h3>
+        <h1 class="text-xs-center">
+          <span style="font-size: 200px;">TBD!</span>
+        </h1>
       </div>
     </div>
   </div>
@@ -188,10 +196,9 @@ layout: 'page'
   <div class="container">
     <div class="grid-row padding-vertical text-xs-center">
       <div class="grid-col--1 header-text">
-        <h2>Leave the opposition in the dust</h2>
+        <h2>Accelerate your business with Fastly's real-time CDN.</h2>
         <p>
-          Join BuzzFeed, Vox&nbsp;Media, Twitter, Wenner&nbsp;Media,
-          and Condé&nbsp;Nast.
+          Test up to $50 of traffic for free, no commitment required.
         </p>
         <p>
           <a href="https://www.fastly.com/signup" class="button action button-lg">Try Fastly for Free</a>
@@ -226,6 +233,8 @@ $("div[data-target]").hover(function(){
 function setTimeline(value){
   $('.event').addClass('hidden');
   $("div[data-content='"+ value +"']").removeClass('hidden');
+  $("a[data-link]").removeClass('active');
+  $("a[data-link="+ value +"]").addClass('active');
 }
 function scrollToTop(){
   $("html, body").animate({
