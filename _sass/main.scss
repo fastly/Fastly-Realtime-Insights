@@ -1,3 +1,9 @@
+body {
+  padding-top: 0;
+}
+h4 {
+  font-weight: bold;
+}
 .grid-col--1 {
   flex: 1 1 0 !important;
 }
@@ -166,6 +172,7 @@
     position: relative;
     width: 50%;
     padding: 20px;
+    margin: -15px 0;
     right: 1px;
     transition: all 0.5s;
     &.active {
@@ -278,14 +285,17 @@
 }
 
 .point-fern-1 { top: 52%; left: 47%; }
-.point-debate1-1 { top: 8%; left: 30%; }
-.point-debate1-2 { top: 81%; left: 44% }
-.point-debate1-3 { top: 80%; left: 54% }
-.point-debate1-4 { top: 78%; left: 63.5% }
-.point-debate1-5 { top: 78%; left: 68% }
-.point-debate1-6 { top: 78%; left: 82.5% }
-.point-debate2-1 { top: 8%; left: 29.7%; }
-.point-debate2-2 { top: 64%; left: 53% }
-.point-debate2-3 { top: 78%; left: 62% }
-.point-debate3-1 { top: 29%; left: 57%; }
-.point-debate3-2 { top: 6%; left: 71.5% }
+.point-debate1-1 { top: 60%; left: 22%; }
+.point-debate1-2 { top: 16%; left: 26% }
+.point-debate1-3 { top: 50%; left: 49% }
+.point-debate-hrc-1 { top: 84%; left: 3% }
+.point-debate-hrc-2 { top: 9%; left: 29.5% }
+.point-debate-hrc-3 { top: 77%; left: 63.5% }
+.point-debate-hrc-4 { top: 76%; left: 82% }
+.point-debate2-1 { top: 57%; left: 13%; }
+.point-debate2-2 { top: 67%; left: 19% }
+.point-debate2-3 { top: 51%; left: 29% }
+.point-debate2-4 { top: 34%; left: 74.5% }
+.point-debate3-1 { top: 46%; left: 45%; }
+.point-debate3-2 { top: 54%; left: 65% }
+.point-debate3-3 { top: 29%; left: 81% }
