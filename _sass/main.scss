@@ -18,8 +18,8 @@ h4 {
   background: linear-gradient(120deg, #c1272d 50%, #ed1c24 75%, #f15a24 95%)
 }
 .header-text {
-  @extend .color--white;
-  @extend .padding-bottom;
+  color: #fff;
+  padding-bottom: 4rem;
   font-family: 'Raleway';
   font-size: 20px;
   line-height: 1.4em;
@@ -35,7 +35,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   min-height: 180px;
-  @extend .padding-vertical;
+  padding: 4rem 0;
   background: linear-gradient(to bottom, #0071bc 2px, white 2px);
   background-size: 10%;
   background-repeat: repeat-x;

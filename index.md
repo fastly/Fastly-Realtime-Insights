@@ -5,10 +5,10 @@ layout: 'page'
   <div class="container">
     <div class="grid-row padding-top">
       <div class="grid-col--1">
-        <img src="/assets/fastly_logo_white.svg" class="fastly-logo">
+        <img src="/public/realtime/fastly_logo_white.svg" class="fastly-logo">
       </div>
       <div class="grid-col--1 text-xs-right">
-        <a href="https://www.fastly.com/signup" class="button action button-lg">Try Fastly for Free</a>
+        <a href="/signup" class="button action button-lg">Try Fastly for Free</a>
       </div>
     </div>
     <div class="grid-row">
@@ -51,7 +51,7 @@ layout: 'page'
           interview with Barack Obama.
         </p>
         <div class="graph margin-bottom">
-          <img src="/assets/two-ferns.svg" class="img-fluid">
+          <img src="/public/realtime/two-ferns.svg" class="img-fluid">
           <div class="data-point point-fern-1" data-target="fern-1"></div>
         </div>
         <div class="timeline">
@@ -81,7 +81,7 @@ layout: 'page'
             fact checkers.
           </p>
           <div class="graph margin-bottom">
-            <img src="/assets/first-debate.svg" class="img-fluid">
+            <img src="/public/realtime/first-debate.svg" class="img-fluid">
             <div class="data-point point-debate1-1" data-target="debate1-1"></div>
             <div class="data-point point-debate1-2" data-target="debate1-2"></div>
             <div class="data-point point-debate1-3" data-target="debate1-3"></div>
@@ -102,7 +102,7 @@ layout: 'page'
         <div class="margin-vertical">
           <h4 class="margin-top">Hillaryclinton.com</h4>
           <p>
-            The <a href="https://www.hillaryclinton.com/" target="_blank">Hillary Clinton campaign website</a>
+            The <a href="https://www.hillaryclinton.com" target="_blank">Hillary Clinton campaign website</a>
             is behind Fastly, which gave us unique visibility into the
             Democratic candidate’s site traffic patterns during the debate.
             Traffic to hillaryclinton.com surged during the debate as viewers
@@ -111,7 +111,7 @@ layout: 'page'
             the debate ended.
           </p>
           <div class="graph margin-bottom">
-            <img src="/assets/first-debate-hrc.svg" class="img-fluid">
+            <img src="/public/realtime/first-debate-hrc.svg" class="img-fluid">
             <div class="data-point point-debate-hrc-1" data-target="debate-hrc-1"></div>
             <div class="data-point point-debate-hrc-2" data-target="debate-hrc-2"></div>
             <div class="data-point point-debate-hrc-3" data-target="debate-hrc-3"></div>
@@ -143,7 +143,7 @@ layout: 'page'
           In contrast to the first debate, we didn’t see large spikes with new media during the second debate — traffic remained high, so we suspect engagement was steady throughout the debate.
         </p>
         <div class="graph margin-bottom">
-          <img src="/assets/second-debate.svg" class="img-fluid">
+          <img src="/public/realtime/second-debate.svg" class="img-fluid">
           <div class="data-point point-debate2-1" data-target="debate2-1"></div>
           <div class="data-point point-debate2-2" data-target="debate2-2"></div>
           <div class="data-point point-debate2-3" data-target="debate2-3"></div>
@@ -174,7 +174,7 @@ layout: 'page'
           While traffic to media sites increased during the third debate, major moments of engagement (spikes) decreased by 83% as compared to the first debate. New media traffic increased by 33% after the third debate started, and steadily increased by 43% throughout. At the debate’s conclusion, traffic was 67% higher than the week prior to the debate.
         </p>
         <div class="graph margin-bottom">
-          <img src="/assets/third-debate.svg" class="img-fluid">
+          <img src="/public/realtime/third-debate.svg" class="img-fluid">
           <div class="data-point point-debate3-1" data-target="debate3-1"></div>
           <div class="data-point point-debate3-2" data-target="debate3-2"></div>
           <div class="data-point point-debate3-3" data-target="debate3-3"></div>
@@ -213,14 +213,14 @@ layout: 'page'
           Test up to $50 of traffic for free, no commitment required.
         </p>
         <p>
-          <a href="https://www.fastly.com/signup" class="button action button-lg">Try Fastly for Free</a>
+          <a href="/signup" class="button action button-lg">Try Fastly for Free</a>
           <a href="contact" class="button primary button-lg">Contact Sales</a>
         </p>
       </div>
     </div>
     <div class="grid-row padding-vertical">
       <div class="grid-col--1 text-xs-center">
-        <img src="/assets/fastly_logo_white.svg" class="fastly-logo">
+        <img src="/public/realtime/fastly_logo_white.svg" class="fastly-logo">
       </div>
     </div>
   </div>
