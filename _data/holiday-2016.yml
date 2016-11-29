@@ -1,53 +1,8 @@
 chronological_events: false
 title: Holiday 2016
 intro: |-
-  We power tens of thousands of ecommerce websites, including Dollar Shave Club,
-  Shopify, KAYAK, and Ticketmaster, giving us key insight into how shoppers
-  engage online. With the 2016 holiday season upon us, we took a look at
-  ecommerce traffic patterns as well as engagement with charity and
-  food-related sites.
+  We power tens of thousands of <a href="https://www.fastly.com/industries/ecommerce">ecommerce websites</a>, including Dollar Shave Club, Shopify, KAYAK, and Ticketmaster, giving us key insight into how shoppers engage online. With the 2016 holiday season upon us, we took a look at ecommerce traffic patterns as well as engagement with charity and food-related sites.
 events:
-  - id: 'shopify'
-    link-text: Shopify
-    timelines:
-      - id: 'shopify-friday'
-        intro: |-
-          <h3>Shopify</h3>
-          <p>
-            Shopify is the leading cloud-based, multi-channel commerce platform
-            designed for small and medium-sized businesses, and we’re pleased
-            to count them among our ecommerce customers.
-          </p>
-          <p>
-            Shopify powers many of the top online sites, including major brands
-            such as Tesla Motors, Red Bull, Nestle, GE, Kylie Jenner, and
-            hundreds of thousands more, giving them a front-row seat for the
-            holiday shopping surge. With that in mind, we worked with them to
-            share how shoppers engaged online during this peak shopping season.
-            Here’s a timeline of what we saw:
-          </p>
-          <a href="https://www.shopify.com" class="graph-title padding-top" target="_blank">
-            <h2>Black Friday</h2>
-          </a>
-        image: '/public/realtime/shopify-friday.svg'
-        points: [
-          '<strong>11/23 1:00 PM ET</strong> traffic was 251% higher than normal as shoppers geared up for the holiday weekend.',
-          '<strong>11/24 1:00 AM ET</strong> a 184% increase as doorbuster sales begin.',
-          '<strong>11/25 3:00 AM ET</strong> a 201% surge as Black Friday sales kick off.',
-          '<strong>11/25 11:00 AM ET</strong> a 344% increase as compared to normal by midday.',
-          '<strong>11/25 5:00 PM ET</strong> traffic starts to taper as Black Friday draws to a close, but remains 107% higher than normal.'
-          ]
-      - id: 'shopify-monday'
-        intro: |-
-          <a href="https://www.shopify.com" class="graph-title padding-top" target="_blank">
-            <h2>Cyber Monday</h2>
-          </a>
-        image: '/public/realtime/shopify-monday.svg'
-        points: [
-          '<strong>11/28 12:00 AM ET</strong> a 119% increase as Cyber Monday begins.',
-          '<strong>11/28 12:00 PM ET</strong> traffic remained 88% higher than normal as sales continued.',
-          '<strong>11/28 11 PM ET</strong> a xx% increase as shoppers rushed to get their purchases in before sales ended.'
-          ]
   - id: 'ecommerce'
     link-text: Ecommerce
     timelines:
@@ -55,22 +10,46 @@ events:
         intro: |-
           <h3>Ecommerce</h3>
           <p>
-            Traffic to ecommerce sites remained higher than normal throughout
-            the week of Thanksgiving, with more traffic overall on Cyber Monday
-            than Black Friday — as of 1 PM ET on Cyber Monday, traffic was 7%
-            higher as compared to 1 PM ET on Black Friday.
+            Traffic to ecommerce sites remained higher than normal throughout the week of Thanksgiving, with more traffic overall on Cyber Monday than Black Friday — as of 1 PM ET on Cyber Monday, traffic was 7% higher as compared to 1 PM ET on Black Friday.
           </p>
         image: '/public/realtime/ecommerce.svg'
         points: [
-          '11/24 9:00 PM ET a 35% increase in ecommerce traffic on Thanksgiving morning as people started their holiday shopping.',
-          '11/24 9:00 PM ET a 62% increase in ecommerce traffic Thanksgiving evening as people went online to take advantage of doorbuster sales after dinner',
-          '11/25 8:00 AM ET a 53.5% increase as Black Friday kicked off.',
-          '11/25 11 AM ET a 207% increase as midday approached.',
-          '11/25 11 PM ET a 93% increase as sales concluded and shoppers rushed to complete',
-          '11/27 11 PM ET a 81% increase in ecommerce traffic just before sales began.',
-          '11/28 midnight ET a 95.5% increase as Cyber Monday began.',
-          '11/28 noon ET traffic leveled off slightly, but remained at 83% above normal as sales continued.',
-          '11/28 11 PM ET a xx% surge as people rushed to get their shopping done before sales ended at midnight.'
+          '<strong>11/24 9:00 PM ET a 35%</strong> increase in ecommerce traffic on Thanksgiving morning as people started their holiday shopping.',
+          '<strong>11/24 9:00 PM ET a 62%</strong> increase in ecommerce traffic Thanksgiving evening as people went online to take advantage of doorbuster sales after dinner',
+          '<strong>11/25 8:00 AM ET a 53.5%</strong> increase as Black Friday kicked off.',
+          '<strong>11/25 11 AM ET a 207%</strong> increase as midday approached.',
+          '<strong>11/25 11 PM ET a 93%</strong> increase as sales concluded and shoppers rushed to complete purchases.',
+          '<strong>11/27 11 PM ET a 81%</strong> increase in ecommerce traffic just before sales began.',
+          '<strong>11/28 12:00 AM ET a 95.5%</strong> increase as Cyber Monday began.',
+          '<strong>11/28 noon ET</strong> traffic leveled off slightly, but remained at 83% above normal as sales continued.',
+          '<strong>11/28 11 PM ET a 129%</strong> surge as people rushed to get their shopping done before sales ended at midnight.',
+          '<strong>11/29 1 AM ET a 77%</strong> increase as 12:00 AM approached on the west coast and shoppers hurried to make the most of Cyber Monday deals.'
+          ]
+  - id: 'shopify'
+    link-text: Shopify
+    timelines:
+      - id: 'shopify-friday'
+        intro: |-
+          <h3>Shopify</h3>
+          <p>
+            <a href="https://www.shopify.com" target="_blank">Shopify</a> is the leading cloud-based, multi-channel commerce platform designed for small and medium-sized businesses, and <a href="https://www.fastly.com/customers/shopify">we’re pleased to count them among our ecommerce customers<a/>.
+          </p>
+          <p>
+            Shopify powers many of the top online sites, including major brands such as Tesla Motors, Red Bull, Nestle, GE, Kylie Jenner, and hundreds of thousands more, giving them a front-row seat for the holiday shopping surge. With that in mind, we worked with them to share how shoppers engaged online during this peak shopping season, comparing holiday traffic to the same time span a month prior (October 23-29).
+          </p>
+          <a href="https://www.shopify.com" class="graph-title padding-top" target="_blank">
+            <h2>Black Friday</h2>
+          </a>
+        image: '/public/realtime/shopify.svg'
+        points: [
+          '<strong>11/23 1:00 PM ET traffic was 251%</strong> higher than normal as shoppers geared up for the holiday weekend.',
+          '<strong>11/24 1:00 AM ET a 184%</strong> increase as doorbuster sales began.',
+          '<strong>11/25 3:00 AM ET a 201%</strong> surge as Black Friday sales kicked off.',
+          '<strong>11/25 11:00 AM ET a 344%</strong> increase as compared to normal by midday.',
+          '<strong>11/25 5:00 PM ET</strong> traffic started to taper as Black Friday drew to a close, but remained <strong>107%</strong> higher than normal.',
+          '<strong>11/28 12:00 AM ET a 119%</strong> increase as Cyber Monday began.',
+          '<strong>11/28 12:00 PM ET</strong> traffic remained <strong>88%</strong> higher than normal as sales continued.',
+          '<strong>11/28 11 PM ET a 104%</strong> increase as shoppers rushed to get their purchases in before sales ended.'
           ]
   - id: 'food'
     link-text: Food
@@ -79,17 +58,14 @@ events:
         intro: |-
           <h3>Food</h3>
           <p>
-            Traffic to food-related sites rose higher than normal through the
-            evening of Thanksgiving as people turned to trusted online sources
-            for recipes and cooking tips, finally dropping off around 7 PM ET
-            as holiday cooking wrapped up.
+            Traffic to food-related sites rose higher than normal through the evening of Thanksgiving as people turned to trusted online sources for recipes and cooking tips, finally dropping off around 7 PM ET as holiday cooking wrapped up.
           </p>
         image: '/public/realtime/food.svg'
         points: [
-          '11/22 11:00 PM ET a 150% increase in traffic to food-related sites as people began to research recipes.',
-          '11/23 6:00 PM ET a 138% increase as people referenced recipes while beginning to prep for Thanksgiving meals.',
-          '11/24 1:00 AM ET a 169% rise in traffic as people on the west coast consulted recipes the night before Thanksgiving.',
-          '11/24 7:00 PM ET a 25% drop in traffic as most Thanksgiving dinners concluded.'
+          '<strong>11/22 11:00 PM a 150%</strong> increase in traffic to food-related sites as people began to research recipes.',
+          '<strong>11/23 6:00 PM a 138%</strong> increase as people referenced recipes while beginning to prep for Thanksgiving meals.',
+          '<strong>11/24 1:00 AM a 169%</strong> rise in traffic as people on the west coast consulted recipes the night before Thanksgiving.',
+          '<strong>11/24 7:00 PM a 25%</strong> drop in traffic as most Thanksgiving dinners concluded.'
           ]
   - id: 'giving'
     link-text: Giving
@@ -98,16 +74,37 @@ events:
         intro: |-
           <h3>Giving</h3>
           <p>
-            Traffic to donation / non-profit sites climbed higher than average
-            the week of Thanksgiving, increasing most notably around midnight
-            ET throughout the week, when online engagement usually drops off.
+            Traffic to donation / non-profit sites climbed higher than average the week of Thanksgiving, increasing most notably around midnight ET throughout the week, when online engagement usually drops off.
           </p>
         image: '/public/realtime/giving.svg'
         points: [
-          '11/22 10 PM ET traffic rose to 99% above normal as people kicked off the holiday week with giving.',
-          '11/23 4 PM ET traffic was 127.6% above normal.',
-          '11/24 1 AM ET traffic spiked 142% above normal on the traditionally altruistic day of Thanksgiving, following holiday dinner.',
-          '11/25 11 PM traffic rose 79% the evening of Black Friday',
-          '11/27 midnight ET traffic continued to remain high throughout the holiday weekend, at 90.5% above normal.',
-          '11/28 midnight ET traffic rose 103% in the early hours of Cyber Monday.'
+          '<strong>11/22 10 PM ET</strong> traffic rose to <strong>99%</strong> above normal as people kicked off the holiday week with giving.',
+          '<strong>11/23 4 PM ET</strong> traffic was <strong>127.6%</strong> above normal.',
+          '<strong>11/24 1 AM ET</strong> traffic spiked <strong>142%</strong> above normal on the traditionally altruistic day of Thanksgiving, following holiday dinner.',
+          '<strong>11/25 11 PM ET</strong> traffic rose <strong>79%</strong> the evening of Black Friday.',
+          '<strong>11/27 12:00 AM ET</strong> traffic continued to remain high throughout the holiday weekend, at <strong>90.5%</strong> above normal.',
+          '<strong>11/28 12:00 AM ET</strong> traffic rose <strong>103%</strong> in the early hours of Cyber Monday.',
+          '<strong>11/28 5:00 PM ET</strong> a <strong>108.5%</strong> increase as sales continued and the workday wound down.',
+          '<strong>11/29 12:00 AM ET</strong> traffic remained high, at <strong>137%</strong> above normal.'
+          ]
+  - id: 'aclu'
+    link-text: ACLU + Giving Tuesday
+    timelines:
+      - id: 'aclu'
+        intro: |-
+          <h3>ACLU + Giving Tuesday</h3>
+          <p>
+            <a href="https://www.givingtuesday.org" target="_blank">Giving Tuesday</a> is celebrated on the Tuesday following Thanksgiving, and marks one of the biggest days of the year for donation and charity sites: last year, over 700,000 people raised $116 million in over 70 countries. We’re pleased to count the <a href="https://www.aclu.org">American Civil Liberties Union</a> (ACLU) as one of our customers.
+          </p>
+        image: '/public/realtime/aclu.svg'
+        points: [
+          '<strong>11/22 10:00 PM ET</strong> traffic was up <strong>238%</strong> as people geared up for the holidays.',
+          '<strong>11/23 4:00 PM ET</strong> traffic rose again the day before Thanksgiving, to <strong>341%</strong> above normal.',
+          '<strong>11/24 12:00 AM ET</strong> the trend continued the morning of Thanksgiving, at <strong>437%</strong> above normal.',
+          '<strong>11/25 12:00 AM ET</strong> traffic remained high, at <strong>220%</strong> above normal.',
+          '<strong>11/25 11:00 PM ET</strong> a <strong>167%</strong> jump in traffic as Black Friday drew to a close.',
+          '<strong>11/27 1:00 AM ET</strong> a <strong>209%</strong> increase in traffic during the holiday weekend.',
+          '<strong>11/28 1:00 AM ET</strong> a <strong>286%</strong> increase as Cyber Monday kicked off.',
+          '<strong>11/28 5:00 PM ET</strong> traffic remained high as Cyber Monday ends, at <strong>238%</strong> above normal.',
+          '<strong>11/29 12:00 AM ET</strong> the early hours of Giving Tuesday showed a <strong>212%</strong> bump in traffic.'
           ]

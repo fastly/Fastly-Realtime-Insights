@@ -31,6 +31,10 @@ h4 {
   font-size: 20px;
   line-height: 1.4em;
   font-weight: 400;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
   h1 {
     text-transform: uppercase;
     font-weight: 800;
@@ -39,10 +43,22 @@ h4 {
 }
 .navigation {
   display: flex;
-  min-height: 180px;
+  justify-content: space-around;
   padding: 4rem 0;
+  @media only screen and (max-width: $break-sm){
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 10px 0;
+  }
   .unit {
     position: relative;
+    @media only screen and (max-width:  $break-sm){
+      width: 100%;
+      text-align: center;
+      padding-right: 5px;
+      margin-bottom: 20px;
+      background: white;
+    }
   }
   a {
     position: relative;
@@ -69,6 +85,7 @@ h4 {
   background-position: 50%;
   background-repeat: repeat-x;
   background-size: 3px 3px;
+  min-height: 180px;
   .unit {
     position: relative;
     @media only screen and (max-width: $break-lg){
@@ -114,6 +131,7 @@ h4 {
       background: white;
       display: flex;
       position: absolute;
+      z-index: 1;
       top: 46px;
       left: 45%;
       @media only screen and (max-width: $break-lg){
@@ -204,6 +222,7 @@ h4 {
       background: white;
       display: flex;
       position: absolute;
+      z-index: 1;
       top: 40%;
       right: -11px;
       transition: all 0.5s;
