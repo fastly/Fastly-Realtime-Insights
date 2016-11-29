@@ -1,0 +1,113 @@
+chronological_events: false
+title: Holiday 2016
+intro: |-
+  We power tens of thousands of ecommerce websites, including Dollar Shave Club,
+  Shopify, KAYAK, and Ticketmaster, giving us key insight into how shoppers
+  engage online. With the 2016 holiday season upon us, we took a look at
+  ecommerce traffic patterns as well as engagement with charity and
+  food-related sites.
+events:
+  - id: 'shopify'
+    link-text: Shopify
+    timelines:
+      - id: 'shopify-friday'
+        intro: |-
+          <h3>Shopify</h3>
+          <p>
+            Shopify is the leading cloud-based, multi-channel commerce platform
+            designed for small and medium-sized businesses, and we’re pleased
+            to count them among our ecommerce customers.
+          </p>
+          <p>
+            Shopify powers many of the top online sites, including major brands
+            such as Tesla Motors, Red Bull, Nestle, GE, Kylie Jenner, and
+            hundreds of thousands more, giving them a front-row seat for the
+            holiday shopping surge. With that in mind, we worked with them to
+            share how shoppers engaged online during this peak shopping season.
+            Here’s a timeline of what we saw:
+          </p>
+          <a href="https://www.shopify.com" class="graph-title padding-top" target="_blank">
+            <h2>Black Friday</h2>
+          </a>
+        image: '/public/realtime/shopify-friday.svg'
+        points: [
+          '<strong>11/23 1:00 PM ET</strong> traffic was 251% higher than normal as shoppers geared up for the holiday weekend.',
+          '<strong>11/24 1:00 AM ET</strong> a 184% increase as doorbuster sales begin.',
+          '<strong>11/25 3:00 AM ET</strong> a 201% surge as Black Friday sales kick off.',
+          '<strong>11/25 11:00 AM ET</strong> a 344% increase as compared to normal by midday.',
+          '<strong>11/25 5:00 PM ET</strong> traffic starts to taper as Black Friday draws to a close, but remains 107% higher than normal.'
+          ]
+      - id: 'shopify-monday'
+        intro: |-
+          <a href="https://www.shopify.com" class="graph-title padding-top" target="_blank">
+            <h2>Cyber Monday</h2>
+          </a>
+        image: '/public/realtime/shopify-monday.svg'
+        points: [
+          '<strong>11/28 12:00 AM ET</strong> a 119% increase as Cyber Monday begins.',
+          '<strong>11/28 12:00 PM ET</strong> traffic remained 88% higher than normal as sales continued.',
+          '<strong>11/28 11 PM ET</strong> a xx% increase as shoppers rushed to get their purchases in before sales ended.'
+          ]
+  - id: 'ecommerce'
+    link-text: Ecommerce
+    timelines:
+      - id: 'ecommerce-friday'
+        intro: |-
+          <h3>Ecommerce</h3>
+          <p>
+            Traffic to ecommerce sites remained higher than normal throughout
+            the week of Thanksgiving, with more traffic overall on Cyber Monday
+            than Black Friday — as of 1 PM ET on Cyber Monday, traffic was 7%
+            higher as compared to 1 PM ET on Black Friday.
+          </p>
+        image: '/public/realtime/ecommerce.svg'
+        points: [
+          '11/24 9:00 PM ET a 35% increase in ecommerce traffic on Thanksgiving morning as people started their holiday shopping.',
+          '11/24 9:00 PM ET a 62% increase in ecommerce traffic Thanksgiving evening as people went online to take advantage of doorbuster sales after dinner',
+          '11/25 8:00 AM ET a 53.5% increase as Black Friday kicked off.',
+          '11/25 11 AM ET a 207% increase as midday approached.',
+          '11/25 11 PM ET a 93% increase as sales concluded and shoppers rushed to complete',
+          '11/27 11 PM ET a 81% increase in ecommerce traffic just before sales began.',
+          '11/28 midnight ET a 95.5% increase as Cyber Monday began.',
+          '11/28 noon ET traffic leveled off slightly, but remained at 83% above normal as sales continued.',
+          '11/28 11 PM ET a xx% surge as people rushed to get their shopping done before sales ended at midnight.'
+          ]
+  - id: 'food'
+    link-text: Food
+    timelines:
+      - id: 'food'
+        intro: |-
+          <h3>Food</h3>
+          <p>
+            Traffic to food-related sites rose higher than normal through the
+            evening of Thanksgiving as people turned to trusted online sources
+            for recipes and cooking tips, finally dropping off around 7 PM ET
+            as holiday cooking wrapped up.
+          </p>
+        image: '/public/realtime/food.svg'
+        points: [
+          '11/22 11:00 PM ET a 150% increase in traffic to food-related sites as people began to research recipes.',
+          '11/23 6:00 PM ET a 138% increase as people referenced recipes while beginning to prep for Thanksgiving meals.',
+          '11/24 1:00 AM ET a 169% rise in traffic as people on the west coast consulted recipes the night before Thanksgiving.',
+          '11/24 7:00 PM ET a 25% drop in traffic as most Thanksgiving dinners concluded.'
+          ]
+  - id: 'giving'
+    link-text: Giving
+    timelines:
+      - id: 'giving'
+        intro: |-
+          <h3>Giving</h3>
+          <p>
+            Traffic to donation / non-profit sites climbed higher than average
+            the week of Thanksgiving, increasing most notably around midnight
+            ET throughout the week, when online engagement usually drops off.
+          </p>
+        image: '/public/realtime/giving.svg'
+        points: [
+          '11/22 10 PM ET traffic rose to 99% above normal as people kicked off the holiday week with giving.',
+          '11/23 4 PM ET traffic was 127.6% above normal.',
+          '11/24 1 AM ET traffic spiked 142% above normal on the traditionally altruistic day of Thanksgiving, following holiday dinner.',
+          '11/25 11 PM traffic rose 79% the evening of Black Friday',
+          '11/27 midnight ET traffic continued to remain high throughout the holiday weekend, at 90.5% above normal.',
+          '11/28 midnight ET traffic rose 103% in the early hours of Cyber Monday.'
+          ]

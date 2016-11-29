@@ -8,7 +8,7 @@ layout: default
         <img src="/public/realtime/fastly_logo_white.svg" class="fastly-logo" />
       </div>
       <div class="grid-col--1 text-xs-right">
-        <a href="/signup" class="button action">Try Fastly for Free</a>
+        <a href="/signup" class="button action">Start a free trial</a>
       </div>
     </div>
     <div class="grid-row">
@@ -24,7 +24,7 @@ layout: default
 <div class="main-content container margin-vertical">
   <h2 class="text-xs-center margin-top">{{site.data[page.data].title}}</h2>
   <div class="grid-row">
-    <div class="grid-col--1 navigation">
+    <div class="grid-col--1 navigation{% if site.data[page.data].chronological_events %} chronological{% endif %}">
       {% for event in site.data[page.data].events %}
         <div class="unit"><a href="#{{event.id}}" data-link="{{event.id}}"{% if forloop.first %} class="active"{% endif %}>{{event.link-text}}</a></div>
       {% endfor %}

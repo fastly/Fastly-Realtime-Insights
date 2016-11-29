@@ -39,9 +39,32 @@ h4 {
 }
 .navigation {
   display: flex;
-  justify-content: space-between;
   min-height: 180px;
   padding: 4rem 0;
+  .unit {
+    position: relative;
+  }
+  a {
+    position: relative;
+    color: $fastly-blue;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid $fastly-blue;
+    border-radius: 4px;
+    padding: 3px 5px;
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover, &.active {
+      color: $fastly-red;
+      border-color: $fastly-red;
+      &::after {
+        border-color: $fastly-red;
+      }
+    }
+  }
+}
+.navigation.chronological {
+  justify-content: space-between;
   background: linear-gradient(180deg, transparent, $fastly-blue, transparent);
   background-position: 50%;
   background-repeat: repeat-x;
@@ -82,22 +105,6 @@ h4 {
     }
   }
   a {
-    position: relative;
-    color: $fastly-blue;
-    padding: 10px 0;
-    text-align: center;
-    border: 2px solid $fastly-blue;
-    border-radius: 4px;
-    padding: 3px 5px;
-    text-decoration: none;
-    transition: all 0.5s;
-    &:hover, &.active {
-      color: $fastly-red;
-      border-color: $fastly-red;
-      &::after {
-        border-color: $fastly-red;
-      }
-    }
     &::after {
       content: '';
       width: 10px;
