@@ -1,5 +1,116 @@
 ---
 layout: default
 ---
-
-{{ content }}
+<div class="header">
+  <div class="container">
+    <div class="grid-row padding-top">
+      <div class="grid-col--1">
+        <img src="/public/realtime/fastly_logo_white.svg" class="fastly-logo" />
+      </div>
+      <div class="grid-col--1 text-xs-right">
+        <a href="/signup" class="button action">Try Fastly for Free</a>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-col--1 header-text">
+        <h1>Real-Time Insights</h1>
+        <p>
+          {{site.data[page.data].intro}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-content container margin-vertical">
+  <h2 class="text-xs-center margin-top">{{site.data[page.data].title}}</h2>
+  <div class="grid-row">
+    <div class="grid-col--1 navigation">
+      {% for event in site.data[page.data].events %}
+        <div class="unit"><a href="#{{event.id}}" data-link="{{event.id}}"{% if forloop.first %} class="active"{% endif %}>{{event.link-text}}</a></div>
+      {% endfor %}
+    </div>
+  </div>
+  <hr class="divider" />
+  <div class="grid-row">
+    <div class="grid-col--1 padding-vertical">
+      {% for event in site.data[page.data].events %}
+        {% assign event_index = forloop.index %}
+        <div class="event{% unless forloop.first %} hidden{% endunless %}" data-content="{{event.id}}">
+          {% for timeline in event.timelines %}
+            {{ timeline.intro }}
+            <div class="graph margin-bottom">
+              <img src="{{ timeline.image }}" class="img-fluid" />
+              {% for point in timeline.points %}
+                <div class="data-point point-{{timeline.id}}-{{forloop.index}}" data-target="{{timeline.id}}-{{forloop.index}}"></div>
+              {% endfor %}
+            </div>
+            <div class="timeline">
+              {% for point in timeline.points %}
+                <div class="unit" data-target="{{timeline.id}}-{{forloop.index}}">
+                  {{ point }}
+                </div>
+              {% endfor %}
+            </div>
+            <div class="endcap">
+              {% if forloop.last and site.data[page.data].events[event_index] %}
+                <a href="#" data-link="{{site.data[page.data].events[event_index].id}}">{{site.data[page.data].events[event_index].link-text}}</a>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="header">
+  <div class="container">
+    <div class="grid-row padding-vertical text-xs-center">
+      <div class="grid-col--1 header-text">
+        <h2>Accelerate your business with Fastly's real-time CDN.</h2>
+        <p>
+          Test up to $50 of traffic for free, no commitment required.
+        </p>
+        <p>
+          <a href="/signup" class="button action button-lg margin-vertical">Try Fastly for Free</a>
+          <a href="contact" class="button primary button-lg">Contact Sales</a>
+        </p>
+      </div>
+    </div>
+    <div class="grid-row padding-vertical">
+      <div class="grid-col--1 text-xs-center">
+        <img src="/public/realtime/fastly_logo_white.svg" class="fastly-logo" />
+        <br>
+        <small class="color--white">© 2016 Fastly.com. All Rights Reserved</small>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  if(window.location.hash) {
+    setTimeline(window.location.hash.split('#')[1]);
+  }
+});
+$("a[data-link]").click(function(e){
+  e.preventDefault();
+  setTimeline($(this).attr('data-link'));
+  scrollToTop();
+  window.location.hash = $(this).attr('data-link');
+});
+$("div[data-target]").hover(function(){
+  $("[data-target="+$(this).attr('data-target')+"]").addClass('active');
+},function(){
+  $("[data-target="+$(this).attr('data-target')+"]").removeClass('active');
+});
+function setTimeline(value){
+  $('.event').addClass('hidden');
+  $("div[data-content='"+ value +"']").removeClass('hidden');
+  $("a[data-link]").removeClass('active');
+  $("a[data-link="+ value +"]").addClass('active');
+}
+function scrollToTop(){
+  $("html, body").animate({
+    scrollTop: $('.main-content').offset().top
+  });
+}
+</script>
