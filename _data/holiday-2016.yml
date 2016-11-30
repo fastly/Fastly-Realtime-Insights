@@ -21,7 +21,7 @@ events:
           '<strong>11/25 11 PM ET a 93%</strong> increase as sales concluded and shoppers rushed to complete purchases.',
           '<strong>11/27 11 PM ET a 81%</strong> increase in ecommerce traffic just before sales began.',
           '<strong>11/28 12:00 AM ET a 95.5%</strong> increase as Cyber Monday began.',
-          '<strong>11/28 noon ET</strong> traffic leveled off slightly, but remained at 83% above normal as sales continued.',
+          '<strong>11/28 12:00 PM ET</strong> traffic leveled off slightly, but remained at 83% above normal as sales continued.',
           '<strong>11/28 11 PM ET a 129%</strong> surge as people rushed to get their shopping done before sales ended at midnight.',
           '<strong>11/29 1 AM ET a 77%</strong> increase as 12:00 AM approached on the west coast and shoppers hurried to make the most of Cyber Monday deals.'
           ]
@@ -62,16 +62,21 @@ events:
           '<strong>11/22 11:00 PM a 150%</strong> increase in traffic to food-related sites as people began to research recipes.',
           '<strong>11/23 6:00 PM a 138%</strong> increase as people referenced recipes while beginning to prep for Thanksgiving meals.',
           '<strong>11/24 1:00 AM a 169%</strong> rise in traffic as people on the west coast consulted recipes the night before Thanksgiving.',
-          '<strong>11/24 7:00 PM a 25%</strong> drop in traffic as most Thanksgiving dinners concluded.'
+          '<strong>11/24 7:00 PM a 25%</strong> drop in traffic as most Thanksgiving dinners concluded',
+          '<strong>11/25 12:00 AM ET</strong> most cooking is finished for the weekend, so traffic started to <strong>level off</strong> with the baseline.',
+          '<strong>11/28 8:00 AM ET</strong> with leftovers in abundance, traffic to food-related <strong>dropped 69%</strong> as people return to work on Monday morning.'
           ]
   - id: 'giving'
-    link-text: Giving
+    link-text: Donations + Giving Tuesday
     timelines:
       - id: 'giving'
         intro: |-
-          <h3>Giving</h3>
+          <h3>Donations + Giving Tuesday</h3>
           <p>
             Traffic to donation / non-profit sites climbed higher than average the week of Thanksgiving, increasing most notably around midnight ET throughout the week, when online engagement usually drops off.
+          </p>
+          <p>
+            <a href="https://www.givingtuesday.org" target="_blank">Giving Tuesday</a> is celebrated on the Tuesday following Thanksgiving, and marks one of the biggest days of the year for donation and charity sites: last year, over 700,000 people raised $116 million in over 70 countries.
           </p>
         image: '/public/realtime/giving.svg'
         points: [
@@ -82,7 +87,8 @@ events:
           '<strong>11/27 12:00 AM ET</strong> traffic continued to remain high throughout the holiday weekend, at <strong>90.5%</strong> above normal.',
           '<strong>11/28 12:00 AM ET</strong> traffic rose <strong>103%</strong> in the early hours of Cyber Monday.',
           '<strong>11/28 5:00 PM ET</strong> a <strong>108.5%</strong> increase as sales continued and the workday wound down.',
-          '<strong>11/29 12:00 AM ET</strong> traffic remained high, at <strong>137%</strong> above normal.'
+          '<strong>11/29 12:00 AM ET</strong> traffic remained high, at <strong>137%</strong> above normal.',
+          '<strong>11/29 12:00 AM ET</strong> traffic remained high into the early hours of Giving Tuesday, at <strong>137%</strong> above normal.'
           ]
   - id: 'aclu'
     link-text: ACLU
@@ -91,7 +97,7 @@ events:
         intro: |-
           <h3>ACLU</h3>
           <p>
-            <a href="https://www.givingtuesday.org" target="_blank">Giving Tuesday</a> is celebrated on the Tuesday following Thanksgiving, and marks one of the biggest days of the year for donation and charity sites: last year, over 700,000 people raised $116 million in over 70 countries. We’re pleased to count the <a href="https://www.aclu.org">American Civil Liberties Union</a> (ACLU) as one of our customers.
+            The <a href="https://www.aclu.org" target="_blank">American Civil Liberties Union</a> (ACLU) is the nation's largest public interest law firm, with a 50-state network of staffed, autonomous affiliate offices. They appear before the United States Supreme Court more than any other organization except the U.S. Department of Justice. About 100 ACLU staff attorneys collaborate with about 2,000 volunteer attorneys in handling close to 6,000 cases annually. We’re pleased to count the ACLU as one of our customers, and worked with them to share traffic patterns during the week of Thanksgiving.
           </p>
         image: '/public/realtime/aclu.svg'
         points: [
