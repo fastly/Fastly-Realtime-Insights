@@ -10,7 +10,7 @@ events:
         intro: |-
           <h3>Ecommerce</h3>
           <p>
-            Traffic to ecommerce sites remained higher than normal throughout the week of Thanksgiving, with more traffic overall on Cyber Monday than Black Friday — as of 1 PM ET on Cyber Monday, traffic was 7% higher as compared to 1 PM ET on Black Friday.
+            Traffic to ecommerce sites remained higher than normal throughout the week of Thanksgiving, with more traffic overall on Cyber Monday than Black Friday — as of 9 PM ET on 11/28, traffic was 39% higher as compared to 9 PM ET on 11/25.
           </p>
         image: '/public/realtime/ecommerce.svg'
         points: [
@@ -19,11 +19,11 @@ events:
           '<strong>11/25 8:00 AM ET a 53.5%</strong> increase as Black Friday kicked off.',
           '<strong>11/25 11 AM ET a 207%</strong> increase as midday approached.',
           '<strong>11/25 11 PM ET a 93%</strong> increase as sales concluded and shoppers rushed to complete purchases.',
-          '<strong>11/27 11 PM ET a 81%</strong> increase in ecommerce traffic just before sales began.',
+          '<strong>11/27 11 PM ET an 81%</strong> increase in ecommerce traffic just before sales began.',
           '<strong>11/28 12:00 AM ET a 95.5%</strong> increase as Cyber Monday began.',
           '<strong>11/28 12:00 PM ET</strong> traffic leveled off slightly, but remained at 83% above normal as sales continued.',
           '<strong>11/28 11 PM ET a 129%</strong> surge as people rushed to get their shopping done before sales ended at midnight.',
-          '<strong>11/29 1 AM ET a 77%</strong> increase as 12:00 AM approached on the west coast and shoppers hurried to make the most of Cyber Monday deals.'
+          '<strong>11/29 1 AM ET a 77%</strong> increase as midnight approached on the west coast and shoppers hurried to make the most of Cyber Monday deals.'
           ]
   - id: 'shopify'
     link-text: Shopify
@@ -39,7 +39,7 @@ events:
           </p>
         image: '/public/realtime/shopify.svg'
         points: [
-          '<strong>11/23 1:00 PM ET traffic was 251%</strong> higher than normal as shoppers geared up for the holiday weekend.',
+          '<strong>11/23 1:00 PM ET</strong> traffic was <strong>251%</strong> higher than normal as shoppers geared up for the holiday weekend.',
           '<strong>11/24 1:00 AM ET a 184%</strong> increase as doorbuster sales began.',
           '<strong>11/25 3:00 AM ET a 201%</strong> surge as Black Friday sales kicked off.',
           '<strong>11/25 11:00 AM ET a 344%</strong> increase as compared to normal by midday.',
@@ -59,12 +59,12 @@ events:
           </p>
         image: '/public/realtime/food.svg'
         points: [
-          '<strong>11/22 11:00 PM a 150%</strong> increase in traffic to food-related sites as people began to research recipes.',
-          '<strong>11/23 6:00 PM a 138%</strong> increase as people referenced recipes while beginning to prep for Thanksgiving meals.',
-          '<strong>11/24 1:00 AM a 169%</strong> rise in traffic as people on the west coast consulted recipes the night before Thanksgiving.',
-          '<strong>11/24 7:00 PM a 25%</strong> drop in traffic as most Thanksgiving dinners concluded',
+          '<strong>11/22 11:00 PM ET a 150%</strong> increase in traffic to food-related sites as people began to research recipes.',
+          '<strong>11/23 6:00 PM ET a 138%</strong> increase as people referenced recipes while beginning to prep for Thanksgiving meals.',
+          '<strong>11/24 1:00 AM ET a 169%</strong> rise in traffic as people on the west coast consulted recipes the night before Thanksgiving.',
+          '<strong>11/24 7:00 PM ET a 25%</strong> drop in traffic as most Thanksgiving dinners concluded.',
           '<strong>11/25 12:00 AM ET</strong> most cooking is finished for the weekend, so traffic started to <strong>level off</strong> with the baseline.',
-          '<strong>11/28 8:00 AM ET</strong> with leftovers in abundance, traffic to food-related <strong>dropped 69%</strong> as people return to work on Monday morning.'
+          '<strong>11/28 8:00 AM ET</strong> with leftovers in abundance, traffic to food-related sites <strong>dropped 69%</strong> as people returned to work on Monday morning.'
           ]
   - id: 'giving'
     link-text: Donations + Giving Tuesday
