@@ -6,7 +6,7 @@ events:
   - id: 'ecommerce'
     link-text: Ecommerce
     timelines:
-      - id: 'ecommerce-friday'
+      - id: 'ecommerce'
         intro: |-
           <h3>Ecommerce</h3>
           <p>
@@ -14,7 +14,7 @@ events:
           </p>
         image: '/public/realtime/ecommerce.svg'
         points: [
-          '<strong>11/24 9:00 PM ET a 35%</strong> increase in ecommerce traffic on Thanksgiving morning as people started their holiday shopping.',
+          '<strong>11/24 9:00 AM ET a 35%</strong> increase in ecommerce traffic on Thanksgiving morning as people started their holiday shopping.',
           '<strong>11/24 9:00 PM ET a 62%</strong> increase in ecommerce traffic Thanksgiving evening as people went online to take advantage of doorbuster sales after dinner',
           '<strong>11/25 8:00 AM ET a 53.5%</strong> increase as Black Friday kicked off.',
           '<strong>11/25 11 AM ET a 207%</strong> increase as midday approached.',
@@ -28,7 +28,7 @@ events:
   - id: 'shopify'
     link-text: Shopify
     timelines:
-      - id: 'shopify-friday'
+      - id: 'shopify'
         intro: |-
           <h3>Shopify</h3>
           <p>
@@ -37,9 +37,6 @@ events:
           <p>
             Shopify powers many of the top online sites, including major brands such as Tesla Motors, Red Bull, Nestle, GE, Kylie Jenner, and hundreds of thousands more, giving them a front-row seat for the holiday shopping surge. With that in mind, we worked with them to share how shoppers engaged online during this peak shopping season, comparing holiday traffic to the same time span a month prior (October 23-29).
           </p>
-          <a href="https://www.shopify.com" class="graph-title padding-top" target="_blank">
-            <h2>Black Friday</h2>
-          </a>
         image: '/public/realtime/shopify.svg'
         points: [
           '<strong>11/23 1:00 PM ET traffic was 251%</strong> higher than normal as shoppers geared up for the holiday weekend.',
@@ -88,11 +85,11 @@ events:
           '<strong>11/29 12:00 AM ET</strong> traffic remained high, at <strong>137%</strong> above normal.'
           ]
   - id: 'aclu'
-    link-text: ACLU + Giving Tuesday
+    link-text: ACLU
     timelines:
       - id: 'aclu'
         intro: |-
-          <h3>ACLU + Giving Tuesday</h3>
+          <h3>ACLU</h3>
           <p>
             <a href="https://www.givingtuesday.org" target="_blank">Giving Tuesday</a> is celebrated on the Tuesday following Thanksgiving, and marks one of the biggest days of the year for donation and charity sites: last year, over 700,000 people raised $116 million in over 70 countries. We’re pleased to count the <a href="https://www.aclu.org">American Civil Liberties Union</a> (ACLU) as one of our customers.
           </p>
