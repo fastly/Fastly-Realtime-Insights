@@ -1,4 +1,5 @@
 $fastly-red: #E82C2A;
+$fastly-orange: #f15a24;
 $fastly-blue: #147FBD;
 $fastly-grey-dark: #7C7C7C;
 $fastly-blue-lightest: #CEECF9;
@@ -21,8 +22,8 @@ h4 {
   width: 140px;
 }
 .header {
-  background: -webkit-linear-gradient(240deg, #c1272d 50%, #ed1c24 75%, #f15a24 95%);
-  background: linear-gradient(120deg, #c1272d 50%, #ed1c24 75%, #f15a24 95%)
+  background: -webkit-linear-gradient(240deg, #c1272d 50%, #ed1c24 75%, $fastly-orange 95%);
+  background: linear-gradient(120deg, #c1272d 50%, #ed1c24 75%, $fastly-orange 95%)
 }
 .header-text {
   color: #fff;
@@ -39,6 +40,28 @@ h4 {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 56px;
+  }
+}
+.mini-nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  a {
+    color: $fastly-grey-dark;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      //color: lighten($fastly-red, 20%);
+      border-bottom: 2px solid lighten($fastly-red, 20%);
+    }
+    &.active {
+      color: $fastly-red;
+      border-bottom: 2px solid $fastly-red;
+    }
   }
 }
 .navigation {
@@ -108,7 +131,7 @@ h4 {
       padding-left: 5px;
     }
     @media only screen and (max-width:  $break-sm){
-        text-align: center;
+      text-align: center;
     }
     a::after {
       top: auto;

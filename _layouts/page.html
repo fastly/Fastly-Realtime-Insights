@@ -22,7 +22,10 @@ layout: default
   </div>
 </div>
 <div class="main-content container margin-vertical">
-  <h2 class="text-xs-center margin-top">{{site.data[page.data].title}}</h2>
+  <div class="mini-nav">
+    <a href="/real-time-stats"{% if site.data[page.data].title == 'Holiday 2016'%} class="active"{% endif %}>Holiday 2016</a>
+    <a href="/real-time-insights/presidential-election-2016"{% if site.data[page.data].title == 'The 2016 Presidential Election'%} class="active"{% endif %}>The 2016 Presidential Election</a>
+  </div>
   <div class="grid-row">
     <div class="grid-col--1 navigation{% if site.data[page.data].chronological_events %} chronological{% endif %}">
       {% for event in site.data[page.data].events %}
@@ -72,7 +75,7 @@ layout: default
         </p>
         <p>
           <a href="/signup" class="button action button-lg margin-vertical">Try Fastly for Free</a>
-          <a href="contact" class="button primary button-lg">Contact Sales</a>
+          <a href="/contact-sales" class="button primary button-lg">Contact Sales</a>
         </p>
       </div>
     </div>
